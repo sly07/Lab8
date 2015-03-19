@@ -1,0 +1,16 @@
+db
+show dbs
+use testDB
+coll = db.getCollection("newCollection")
+coll.find()
+coll.insert({vehicle: "plane", speed:"480mph"})
+coll.insert({vehicle: "car", speed:"120mph"})
+coll.insert({vehicle: "train", speed:"120mph"})
+coll.find()
+coll.find({speed:"480mph"})
+use weather
+show collections
+weather.comments
+coll = db.getCollection("comments")
+coll.find()
+quit
